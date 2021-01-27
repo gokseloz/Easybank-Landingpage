@@ -23,5 +23,5 @@
 
 ## Live demo
 <ul> 
-<li><a href="https://vercel.com/gokseloz/easybank-landingpage" target="_blank">See live demo</a></li>
+<li><a href="https://easybank-landingpage-ecru.vercel.app/" target="_blank">See live demo</a></li>
 </ul>
