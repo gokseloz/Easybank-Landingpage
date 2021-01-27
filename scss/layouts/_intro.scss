@@ -1,0 +1,117 @@
+.intro {
+    background-color: $veryLight-gray;
+
+    @media (min-width:768px) {
+        display: flex;
+        flex-direction: row;
+        height: 60rem;
+    }
+
+    &-bg {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        background: url(/images/bg-intro-mobile.svg) no-repeat center calc(50% - 5rem) / cover;
+
+        @media (min-width:768px) {
+            background: url(/images/bg-intro-desktop.svg) no-repeat calc(50% + 22rem) calc(50% - 4rem) / cover;
+            order: 2;
+            flex: 1 1 55%;
+        }
+
+        @media (min-width:1100px) {
+            background: url(/images/bg-intro-desktop.svg) no-repeat calc(50% + 22rem) calc(50% - 4rem);
+            overflow: visible;
+        }
+
+        //4 phone image
+        img {
+            position: relative;
+            top: -12rem;
+            width: 100%;
+            max-width: 35rem;
+
+            @media (min-width:768px) {
+                position: absolute;
+                top: 50%;
+                width: 40rem;
+                max-width: 60rem;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            @media (min-width:1100px) {
+                width: 60rem;
+                max-width: 60rem;
+            }
+        }
+    }
+
+    &-text {
+        position: relative;
+        z-index: 3;
+        margin-top: -13rem;
+        padding: 2rem 2rem 10rem 2rem;
+        background-color: $veryLight-gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (min-width:768px) {
+            z-index: 1;
+            margin-top: 0;
+            padding: 0;
+            order: 1;
+            flex: 1 1 45%;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            @media (min-width:597px) {
+                width: 50rem;
+                max-width: 50rem;
+            }
+
+            @media (min-width:768px) {
+                width: 100%;
+                max-width: none;
+                align-items: flex-start;
+                padding-left: 12rem;
+                padding-right: 12rem;
+            }
+        }
+
+
+        h2 {
+            font-size: 3.8rem;
+            text-align: center;
+            opacity: .9;
+
+            @media (min-width:768px) {
+                font-size: 4.8rem;
+                text-align: left;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+
+            @media (min-width:768px) {
+                text-align: left;
+            }
+        }
+
+        //button effect removed (comes from the components file)
+        .intro-btn {
+            transform: none;
+        }
+    }
+}

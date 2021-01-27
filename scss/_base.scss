@@ -1,0 +1,46 @@
+//fonts
+$public: 'Public Sans',  sans-serif;
+
+//colors
+$white: hsl(0, 0%, 100%);
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+$grayish-blue: hsl(233, 8%, 62%);
+$lightGrayish-blue: hsl(220, 16%, 96%);
+$veryLight-gray: hsl(0, 0%, 98%);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: $public;
+}
+
+html {
+    font-size: 10px;
+    @media (max-width:768px) {
+        //"scrollDisabled" class comes from js file
+        &.scrollDisabled {
+            overflow: hidden;
+        }
+    }
+}
+
+h2,
+h3,
+h4 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: $dark-blue;
+    font-weight: 400;
+}
+
+p {
+    line-height: 2.5rem;
+    color: $grayish-blue;
+}
+
+
+

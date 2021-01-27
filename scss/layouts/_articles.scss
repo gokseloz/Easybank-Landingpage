@@ -1,0 +1,29 @@
+.articles {
+    padding: 9rem 2rem;
+    background-color: $veryLight-gray;
+
+    @media (min-width:1100px) {
+        padding: 9rem 12rem;
+    }
+
+    h2 {
+        font-size: 3.4rem;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 3.5rem;
+
+        @media (min-width:1100px) {
+            text-align: left;
+        }
+    }
+
+    &-posts {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width:600px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
