@@ -120,7 +120,8 @@ p {
         height: 25rem; } }
     .post-content .post-author {
       color: #9698a6;
-      display: inline-block; }
+      display: inline-block;
+      font-size: 1.2rem; }
     .post-content .post-header {
       font-size: 1.7rem;
       margin-top: 1rem;
