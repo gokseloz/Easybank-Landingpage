@@ -10,12 +10,18 @@ $grayish-blue: hsl(233, 8%, 62%);
 $lightGrayish-blue: hsl(220, 16%, 96%);
 $veryLight-gray: hsl(0, 0%, 98%);
 
-* {
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
     font-family: $public;
+}
+
+a, a:visited, a:hover{
+    text-decoration: none;
 }
 
 html {
