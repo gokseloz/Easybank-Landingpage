@@ -95,7 +95,7 @@ p {
       padding: 1rem; } }
   @media (min-width: 1100px) {
     .post {
-      flex: 1 1 25%;
+      flex: 1 1 22%;
       padding: 0; } }
   .post + .post {
     margin-top: 2.5rem; }
@@ -104,7 +104,7 @@ p {
         margin-top: 0rem; } }
     @media (min-width: 1100px) {
       .post + .post {
-        padding-left: 3rem; } }
+        margin-left: 3rem; } }
   .post-img {
     width: 100%;
     height: 20rem; }
@@ -267,38 +267,34 @@ p {
       display: flex;
       flex-direction: row;
       height: 60rem; } }
-  .intro-bg {
+  .intro-image {
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     background: url(/images/bg-intro-mobile.svg) no-repeat center calc(50% - 5rem)/cover; }
     @media (min-width: 768px) {
-      .intro-bg {
+      .intro-image {
         background: url(/images/bg-intro-desktop.svg) no-repeat calc(50% + 22rem) calc(50% - 4rem)/cover;
         order: 2;
         flex: 1 1 55%; } }
     @media (min-width: 1100px) {
-      .intro-bg {
+      .intro-image {
         background: url(/images/bg-intro-desktop.svg) no-repeat calc(50% + 22rem) calc(50% - 4rem);
         overflow: visible; } }
-    .intro-bg img {
+    .intro-image img {
       position: relative;
       top: -12rem;
       width: 100%;
       max-width: 35rem; }
       @media (min-width: 768px) {
-        .intro-bg img {
+        .intro-image img {
           position: absolute;
           top: 50%;
-          width: 40rem;
+          min-width: 40rem;
           max-width: 60rem;
           left: 50%;
           transform: translate(-50%, -50%); } }
-      @media (min-width: 1100px) {
-        .intro-bg img {
-          width: 60rem;
-          max-width: 60rem; } }
   .intro-text {
     position: relative;
     z-index: 3;
@@ -330,6 +326,10 @@ p {
           width: 100%;
           max-width: none;
           align-items: flex-start;
+          padding-left: 6rem;
+          padding-right: 6rem; } }
+      @media (min-width: 1100px) {
+        .intro-text-wrapper {
           padding-left: 12rem;
           padding-right: 12rem; } }
     .intro-text h2 {
